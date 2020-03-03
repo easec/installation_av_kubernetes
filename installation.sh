@@ -2,7 +2,7 @@
 
 echo -n "Hämtar signeringsnyckel"
 
-curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key ad$
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
 echo -n "Lägger till referenser"
 sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
